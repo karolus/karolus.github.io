@@ -8,11 +8,11 @@ p {
 
 .title {
 	letter-spacing: -1px;
-	font-size: 54px;	
+	font-size: 54px;
 }
 
 .subtitle {
-	font-size: 36px;
+	font-size: 32px;
 }
 
 .contact {
@@ -40,6 +40,5 @@ a {
 #info {
 	color: #242736;
 	text-align: center;
-	position: relative;	
-  	line-height: 2.0;
+	position: relative;
 }
