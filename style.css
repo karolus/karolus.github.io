@@ -41,6 +41,6 @@ a {
 #info {
 	color: #242736;
 	text-align: center;
-	position: relative;
-  	top: 10%;  	
+	position: relative;	
+  	line-height: 2.0;
 }
