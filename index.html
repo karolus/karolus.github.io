@@ -1,74 +1,213 @@
-<html>
-<head>	
-	<meta name=viewport content="width=device-width, initial-scale=1">
-	<meta http-equiv="Expires" content="604800" />
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<title>Karol Kubicki – Mobile Tech Lead</title>
+	<meta name="description" content="Mobile Tech Lead at Dropbox. 14+ years in iOS, focused on payments, monetization and AI-first development.">
+	<meta property="og:title" content="Karol Kubicki – Mobile Tech Lead">
+	<meta property="og:description" content="14+ years in iOS, focused on payments, monetization and AI-first development.">
 	<style>
+		:root {
+			--text: #16181d;
+			--muted: #6a6f7a;
+			--line: #e7e8eb;
+			--background: #fff;
+		}
+
+		@media (prefers-color-scheme: dark) {
+			:root {
+				--text: #ececee;
+				--muted: #9a9ea8;
+				--line: #2b2d33;
+				--background: #131417;
+			}
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
 		body {
-			background-color: white;
+			margin: 0;
+			background: var(--background);
+			color: var(--text);
+			font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-size-adjust: 100%;
 		}
 
-		p {
-			font-family: 'Lato', sans-serif;
+		main {
+			max-width: 640px;
+			margin: 0 auto;
+			padding: 96px 24px;
 		}
 
-		.title {
-			letter-spacing: -1px;
-			font-size: 54px;
+		a {
+			color: inherit;
+			text-decoration: underline;
+			text-decoration-color: var(--muted);
+			text-decoration-thickness: 1px;
+			text-underline-offset: 3px;
 		}
 
-		.subtitle {
-			font-size: 32px;
+		a:hover {
+			text-decoration-color: currentColor;
 		}
 
-		.contact {
-			font-size: 24px;
-		}
-
-		.social {
-			font-size: 18px;
+		p, ul, h1, h2, h3 {
+			margin: 0;
 		}
 
 		.image-face {
-			width: 150px;
-			height: 150px;
+			display: block;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			margin-bottom: 24px;
 		}
 
-		#bio {
-			margin-left: auto;
-			margin-right: auto;
+		h1 {
+			font-size: 32px;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+			line-height: 1.2;
 		}
 
-		#info {
-			color: #242736;
-			text-align: center;
-			position: relative;
+		.role {
+			color: var(--muted);
+			margin-top: 4px;
+		}
+
+		.bio {
+			margin-top: 24px;
+		}
+
+		.links {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 4px 20px;
+			margin-top: 24px;
+			padding: 0;
+			list-style: none;
+		}
+
+		section {
+			margin-top: 56px;
+		}
+
+		h2 {
+			color: var(--muted);
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 16px;
+		}
+
+		.entry {
+			display: grid;
+			grid-template-columns: 112px 1fr;
+			gap: 0 16px;
+			padding: 14px 0;
+			border-top: 1px solid var(--line);
+		}
+
+		.entry:last-child {
+			padding-bottom: 0;
+		}
+
+		.years {
+			color: var(--muted);
+			font-size: 15px;
+			font-variant-numeric: tabular-nums;
+			line-height: 27px;
+		}
+
+		h3 {
+			font-size: inherit;
+			font-weight: 600;
+		}
+
+		@media (max-width: 520px) {
+			main {
+				padding: 56px 20px;
+			}
+
+			.entry {
+				grid-template-columns: 1fr;
+			}
 		}
 	</style>
 </head>
 <body>
-	<div id="info">
-		<p class="title">
-			Karol Kubicki
-		</p>
-		<p>
-			<img class="image-face" src="face.jpg" alt="Mountain View">
-		</p>
-		<p class="subtitle">
-			iOS developer
-		</p>
-		<div id="bio">
-			<p>
-				Hi my name is Karol Kubicki and I've been writing in iOS since 2012. If you want to know more, feel free to send me a message!
+	<main>
+		<header>
+			<img class="image-face" src="face.jpg" alt="Portrait of Karol Kubicki">
+			<h1>Karol Kubicki</h1>
+			<p class="role">Mobile Tech Lead at Dropbox</p>
+			<p class="bio">
+				I work on Mobile Growth at Dropbox, focused on payments and monetization. I led a large-scale StoreKit 2 migration that opened up tens of millions of revenue and improved load times by over 50%. As Tech Lead, I own the iOS roadmap, observability and development process, and mentor engineers. I also lead AI adoption, creating the skills and workflows for an AI-first approach.
 			</p>
-		</div>
-		<p class="contact">
-			<a href="mailto:kontakt@karolkubicki.pl">kontakt@karolkubicki.pl</object></a>
-		</p>
-		<p class="social">
-			<a href="http://twitter.com/kar_kub">Twitter</a> |
-			<a href="http://github.com/karolus">GitHub</a> |
-			<a href="https://www.linkedin.com/pub/karol-kubicki/2b/880/11b">LinkedIn</a>
-		</p>
-	</div>
+			<p class="bio">
+				In 14+ years of building iOS apps, I've worked on everything from large-scale products with millions of users to small, agile startups.
+			</p>
+			<ul class="links">
+				<li><a href="mailto:kontakt@karolkubicki.pl">kontakt@karolkubicki.pl</a></li>
+				<li><a href="https://www.linkedin.com/pub/karol-kubicki/2b/880/11b">LinkedIn</a></li>
+				<li><a href="https://github.com/karolus">GitHub</a></li>
+			</ul>
+		</header>
+
+		<section>
+			<h2>Experience</h2>
+			<div class="entry">
+				<p class="years">10.2024 – now</p>
+				<div>
+					<h3>Dropbox</h3>
+					<p>Tech Lead, Mobile Growth</p>
+				</div>
+			</div>
+			<div class="entry">
+				<p class="years">2024</p>
+				<div>
+					<h3>Artvis</h3>
+					<p>Founding iOS Engineer</p>
+				</div>
+			</div>
+			<div class="entry">
+				<p class="years">2023 – 2024</p>
+				<div>
+					<h3>Independent</h3>
+					<p>iOS contractor and founder of VoiceCal</p>
+				</div>
+			</div>
+			<div class="entry">
+				<p class="years">2016 – 2023</p>
+				<div>
+					<h3>Toptal</h3>
+					<p>Senior iOS Developer</p>
+				</div>
+			</div>
+			<div class="entry">
+				<p class="years">2012 – 2016</p>
+				<div>
+					<h3>Tooploox</h3>
+					<p>Lead iOS Developer</p>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Talks</h2>
+			<div class="entry">
+				<p class="years">Let Swift #28</p>
+				<p>ChatGPT – how to use it in our apps</p>
+			</div>
+			<div class="entry">
+				<p class="years">Mobile Warsaw</p>
+				<p><a href="https://www.youtube.com/watch?v=n4Wjrv3GwE8">Testing and how not to write 10k lines of code</a></p>
+			</div>
+		</section>
+	</main>
+</body>
 </html>
-<link href='https://fonts.googleapis.com/css?family=Lato:300&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
